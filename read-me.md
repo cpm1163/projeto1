@@ -35,7 +35,15 @@ selecionar botão SSH e copiar o endereço
 git@github.com:cpm1163/projeto1.git
 
 
+
 git remote add origin git@github.com:cpm1163/projeto1.git
 
 # ver se acatou o comando
 git remote -v
+
+# verificar se existe algo no git por fazer
+git status 
+
+# Dar o commit manual
+git commit -m "o que esta no commit"
+git push
