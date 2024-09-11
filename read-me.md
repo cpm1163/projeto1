@@ -8,6 +8,10 @@ pip install django-cors-headers
 pip install djangorestframework-simplejwt
 pip install django-debug-toolbar
 pip install pillow
+# gerar o requirements.txt
+pip freeze > requirements.txt
+# instalar o requirements.txt
+pip install -r requirements.txt
 
 # Verificar a instalação do django
 django-admin --version
@@ -69,3 +73,6 @@ pip install python-dotenv
 python manage.py migrate
 
 python manage.py runserver
+
+# serve para indicar para o python que a pasta é um pacote
+__init__.py
