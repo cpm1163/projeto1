@@ -1,6 +1,14 @@
 pip install pip setuptools wheel --upgrade
 pip install pytest
 pip install django
+pip install python-dotenv
+
+# Precisa para migrate
+pip install django-cors-headers
+pip install djangorestframework-simplejwt
+pip install django-debug-toolbar
+pip install pillow
+
 # Verificar a instalação do django
 django-admin --version
 
@@ -47,3 +55,17 @@ git status
 # Dar o commit manual
 git commit -m "o que esta no commit"
 git push
+
+# Criando o projeto django
+django-admin startproject projeto .
+
+# Rodar o django
+python manage.py runserver
+
+# install dotenv
+pip install python-dotenv
+
+# criar as migrações
+python manage.py migrate
+
+python manage.py runserver
