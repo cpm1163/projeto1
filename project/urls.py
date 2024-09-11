@@ -17,9 +17,15 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
+from django.http import HttpResponse
+
+# HTTP Request
+def my_view(request):
+    return HttpResponse('Uma string')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sobre/', my_view),
     path('', include('recipes.urls')),
     path('authors/', include('authors.urls')),
     path('__debug__/', include('debug_toolbar.urls')),
